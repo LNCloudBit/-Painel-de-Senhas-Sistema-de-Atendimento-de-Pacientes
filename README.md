@@ -1,66 +1,129 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>FuSEx</title>
-	<link href="css/bootstrap.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
-	<script src="lib/jquery-3.3.1.min.js"></script>
-	<script src="lib/scripts.js"></script>
-	<style>
-		
-		
-        img{
-			width: 500px;
-			height:160px;
-			
-		}	
+🩺 Painel de Senhas – Sistema de Atendimento de Pacientes
 
-    div#d1{
-	background-color: #3e766c;
-	}
-	.FuSEx{
-		font-weight: bold;
-		font-size: 52px;
-	}
-</style>
-</head>
 
-<body>
-	<id= barra div class="barraTop">&nbsp;</div>
-	<div class="container page">
-		<div class="row barraSuperior">
-			<div class="col-xs-1">
-				<img src="https://2bil.eb.mil.br/images/logo-om.png" id="img" class="uespiLogo">
-			</div>
-			<div class="col-xs-11" style="text-align: right;"><p></p>
-				<span  class="FuSEx" >FUNDO DE SAÚDE DO EXÉRCITO</span><br>
-				<span class="subtitulo"> <strong>2° Batalhao De Infantaria Leve Aeromovel</strong></span>
-				
-			</div>
-		</div>
-		<div class="row">
-			<div id="d1" class="senhaAtual">
-				<div id="d1" class="row"> 
-					<div  class="col-xs-5 col-xs-offset-1" style="text-align: right;"><br><br>
-						<span  class="senhaAtualTexto">SENHA &nbsp; </span>
-					</div>
-					<div class="col-xs-5"  style="text-align: left;">
-						<span id="senhaAtualNumero">0000</span>
-					</div>
-					<input type="hidden" id="senhaNormal" value="0000">
-					<input type="hidden" id="senhaPrioridade" value="P000">
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-xs-4 col-xs-offset-4 ultimaSenha">
-				<br>
-				<span id="ultimaSenhaTexto">SENHA ANTERIOR</span><br>
-				<span>Senha </span>
-				<span id="ultimaSenhaNumero">0000</span>
-			</div>
-		</div>
-	</div>
-	<audio id="audioChamada" src="audio/chamada.wav"></audio>
-</body>
-</html>
+📌 Sobre o Projeto
+
+Este projeto consiste em um painel de senhas desenvolvido originalmente pela comunidade e posteriormente customizado para atender às necessidades de uma instituição militar.
+O objetivo principal é otimizar o atendimento ao público, garantindo mais organização, agilidade e eficiência no fluxo de chamadas dos pacientes.
+
+Com essa adaptação, o sistema foi ajustado para o contexto hospitalar militar, possibilitando um controle mais claro sobre o atendimento, priorizando pacientes, reduzindo filas e melhorando a comunicação entre o setor de recepção e os consultórios.
+
+
+
+🎯 Objetivos do Projeto
+
+Melhorar a gestão de filas no atendimento.
+
+Garantir maior agilidade na chamada dos pacientes.
+
+Organizar o fluxo de atendimentos dentro da instituição.
+
+Oferecer um ambiente visual intuitivo para operadores e pacientes.
+
+Customizar o sistema para atender necessidades específicas do ambiente militar.
+
+
+🛠️ Funcionalidades
+
+📌 Gerenciamento de senhas — emissão, listagem e priorização.
+
+🔔 Chamada de pacientes com exibição no painel principal.
+
+🧩 Interface personalizável para adequar à identidade visual da instituição.
+
+📊 Controle de filas com separação por setores ou especialidades.
+
+📢 Integração com sinal sonoro para notificação de chamada.
+
+👨‍⚕️ Ambiente otimizado para atendimento hospitalar militar.
+
+
+
+🏛️ Contexto da Adaptação
+
+O código-base foi originalmente encontrado em uma comunidade de desenvolvedores.
+Após análise, ele foi editado e aprimorado para atender aos seguintes pontos:
+
+Padronização visual de acordo com o ambiente institucional.
+
+Organização dos fluxos de atendimento para diferentes setores.
+
+Ajustes na terminologia e comunicação com o público.
+
+Inclusão de recursos extras para melhorar a experiência do paciente.
+
+
+
+💻 Tecnologias Utilizadas
+
+HTML5 — Estrutura da aplicação.
+
+CSS3 — Estilização e identidade visual.
+
+JavaScript — Lógica do painel e controle de filas.
+
+(Opcional) PHP / Node.js — Dependendo da versão usada para integração com o banco de dados.
+
+MySQL / SQLite — Armazenamento e gerenciamento das senhas emitidas.
+
+
+
+🚀 Como Executar o Projeto
+
+1️⃣ Clonar o repositório
+
+git clone https://github.com/seu-usuario/painel-senhas.git
+
+2️⃣ Acessar o diretório do projeto
+
+cd painel-senhas
+
+3️⃣ Configurar o ambiente
+
+Se o sistema usar banco de dados, configure as credenciais no arquivo config.php ou equivalente.
+
+Personalize os textos, logos e cores conforme necessário.
+
+4️⃣ Executar
+
+Se for um projeto estático, basta abrir o arquivo index.html no navegador.
+
+Caso utilize servidor local:
+
+php -S localhost:8080
+
+Ou utilize ferramentas como XAMPP, WAMP ou Node.js.
+
+
+📷 Demonstração do Sistema (Opcional)
+
+(Aqui você pode inserir capturas de tela ou GIFs mostrando o painel em funcionamento.)
+
+
+🛡️ Licença
+
+Este projeto foi originalmente disponibilizado pela comunidade.
+
+As adaptações realizadas não alteram a licença original e têm como único objetivo personalizar o sistema para uso interno.
+
+
+🤝 Contribuição
+
+Contribuições são bem-vindas! Caso queira sugerir melhorias:
+
+Faça um fork do projeto.
+
+Crie uma branch para sua funcionalidade (git checkout -b feature/sua-funcionalidade).
+
+Realize os commits (git commit -m 'Adiciona nova funcionalidade').
+
+Envie um pull request.
+
+
+📌 Autor e Customização
+
+Customização e Manutenção: Lucas Neves
+
+Projeto Base: Comunidade Open Source
+
+Finalidade: Otimizar o atendimento de pacientes em ambiente militar.
